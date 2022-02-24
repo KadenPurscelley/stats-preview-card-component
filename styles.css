@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 120vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.card {
+    width: 275px;
+    height: 90%;
+    border-radius: 5px;
+    background: hsl(244, 38%, 16%);
+    padding-bottom: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+.img-sect {
+    height: 32%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(images/image-header-mobile.jpg) no-repeat center;
+    background-size: cover;
+} 
+.img-sect .overlay {
+    background-color: rgba(170, 92, 219, 0.7);
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+h1 {
+    font-size: 25px;
+    padding: 1.5rem 1rem; 
+}
+span {
+    color: rgb(170, 92, 219);
+}
+.main-p {
+    line-height: 22px;
+    font-size: 13px;
+    padding: 0 20px;
+    padding-bottom: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.overview {
+    padding: 10px;
+}
+.overview h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.overview p {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 0;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.info {
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    body {
+        height: 100vh;
+        margin: 0;
+    }
+    .card {
+        height: 22rem;
+        width: 60rem;
+        padding-bottom: 0;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    .img-sect {
+        background: url(images/image-header-desktop.jpg) no-repeat cover;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+        width: 100%;
+    }
+    .img-sect .overlay {
+        background-color: rgba(170, 92, 219, 0.7);
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+    }
+    .info {
+        text-align: left;
+    }
+    .overviews {
+        margin: 2rem;
+    }
+    .overview {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        display: inline-block;
+    }
+    .info h1 {
+        font-size: 1.8rem;
+        padding-right: 3.5rem;
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+    }
+    .info .main-p {
+        padding: 0 100px 0 40px;
+    }
+}   
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 10px;
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
